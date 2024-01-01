@@ -5,12 +5,17 @@ import { useDarkMode } from "../DarkModeContext";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 //https://github.com/Abdulrazaq-pro
-const Hero = () => {
+const Hero = ({top,setTop}) => {
   const { darkMode, setDarkMode } = useDarkMode();
   // const [darkMode, setDarkMode] = useState(localStorage.getItem("darky"));
 
   return (
     <div className="z-[900] md:grid md:grid-cols-2 flex flex-col-reverse items-center justify-center md:justify-center md:px-7 flex-1">
+      {top===true && (
+        <p className="text-md px-3 py-1 rounded-lg shadow-sm top-alert absolute top-0 left-0 translate-y-[-30px]">
+          top of page !
+        </p>
+      )}
       <div className="mx-auto px-7 space-y-2 min-md:space-y-8 max-w-md ">
         <div
           className={`h-[3px] w-[30%] from-transparent bg-gradient-to-r via-[#838383] to-transparent`}
@@ -25,8 +30,8 @@ const Hero = () => {
           Front End developer
         </p>
         <p className="max-md:text-[16px] text-neutral-600">
-          Front-End Maestro. Seamless user experience crafted with innovative
-        e. <br />
+          Front-End Maestro. Seamless user experience crafted with innovative e.{" "}
+          <br />
           Welcome to the realm where innovation meets creativity! &#x1F680;
         </p>
         <div className="flex socials gap-2">

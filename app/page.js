@@ -15,6 +15,7 @@ import Jobs from "./components/sub_components/Jobs";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [select, setSelect] = useState("home");
+  const [top, setTop] = useState(false);
   console.log(select);
   const navChange1 = () => {
     setSelect("home");
@@ -38,7 +39,7 @@ export default function Home() {
     const handleScroll = (e) => {
       if (window.scrollY === 0) {
         e.preventDefault;
-        alert("you don reach top o");
+        // setTop(true)
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -74,8 +75,10 @@ export default function Home() {
                       navChange4={navChange4}
                       // navChange5={navChange5}
                     />
+                    
                   </div>
-                    <Hero />
+                    
+                    <Hero top={top} setTop={setTop}/>
                 </div>
                 <div className="overflow-auto overflow-x-hidden  max-w-[100vw]">
                   <Content />

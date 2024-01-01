@@ -161,11 +161,22 @@ position: relative;
 .slick-list {
   margin-bottom: 5px;
 }
+.top-alert{
+  animation: topp 2s ease-in-out;
+}
 @keyframes roller {
   from {
     width: 0;
   }
   to {
     width: 100%;
+  }
+}
+@keyframes topp {
+  from{
+    transform: translateY(-20px);
+  }
+  to{
+    transform: translateY(20px);
   }
 }
