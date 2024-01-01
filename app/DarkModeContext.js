@@ -8,11 +8,11 @@ export const DarkModeProvider = ({ children }) => {
   // const [darkMode, setDarkMode] = useState(false);
   const [darkMode, setDarkMode] = useState(() => {
     // const storedDarkMode=localStorage.getItem('darky')
-    return JSON.parse(localStorage.getItem("darky")) || true;
+    return JSON.parse(localStorage.getItem("darky")) || false;
     // return storedDarkMode ?JSON.parse(storedDarkMode):false
   });
   useEffect(() => {
-    document.documentElement.classList.remove("dark", darkMode);
+    document.documentElement.classList.toggle("dark", darkMode);
   }, [darkMode]);
   
  
