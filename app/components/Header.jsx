@@ -31,7 +31,7 @@ const Header = ({
   // };
 
   return (
-      <div className="px-8 py-4 sticky flex justify-between items-center navbar top-0 left-0 bg-blue_3 z-[1000] bg-white dark:bg-bgdark dark:text-bglight shadow-sm ">
+      <div className="px-8 py-6 sticky flex justify-between items-center navbar top-0 left-0 bg-blue_3 z-[1000] bg-white dark:bg-bgdark dark:text-bglight shadow-sm ">
         <a
           className="logo bg-gradient-to-r to-primary via-secondary from-third dark:from-[#aeaebb] dark:via-[#4d4d53] dark:to-[#4682b4] text-transparent bg-clip-text font-semibold"
           href="/"
