@@ -26,7 +26,7 @@ const Jobs = () => {
             >
               {name}
             </div>
-            <div className=" w-full group-hover:invisible px-2 bg-gray-100 transition ease-in-out py-2 flex-1 flex items-center group-hover:blur-sm text-neutral-600 dark:text-neutral-200 text-[10px] dark:bg-[#333333]">
+            <div className=" w-full group-hover:invisible px-2 bg-gray-100 transition ease-in-out py-2 flex-1 flex items-center group-hover:blur-sm text-neutral-600 dark:text-neutral-200 text-[14px] dark:bg-[#333333]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatibus quia vero ex aliquam quasi nulla?
             </div>

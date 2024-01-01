@@ -56,7 +56,7 @@ export default function Home() {
     // fetchData;
   }, []);
   return (
-    <main className={`dark:bg-bgdark dark:text-white`}>
+    <main className={`dark:bg-bgdark dark:text-white text-lg`}>
       <DarkModeProvider>
         {isLoading ? (
           <Loader />

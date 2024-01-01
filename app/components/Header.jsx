@@ -36,7 +36,7 @@ const Header = ({
           className="logo bg-gradient-to-r to-primary via-secondary from-third dark:from-[#aeaebb] dark:via-[#4d4d53] dark:to-[#4682b4] text-transparent bg-clip-text font-semibold"
           href="/"
         >
-          Ken<span className="">Edits</span>
+          Abdul<span className="">Razaq</span>
         </a>
         <div className="flex justify-center items-center gap-3">
           <div
