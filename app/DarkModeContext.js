@@ -12,7 +12,7 @@ export const DarkModeProvider = ({ children }) => {
     // return storedDarkMode ?JSON.parse(storedDarkMode):false
   });
   useEffect(() => {
-    document.documentElement.classList.add("dark", darkMode);
+    document.documentElement.classList.remove("dark", darkMode);
   }, [darkMode]);
   
  
