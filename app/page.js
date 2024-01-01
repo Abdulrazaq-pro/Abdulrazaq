@@ -63,19 +63,21 @@ export default function Home() {
         ) : (
           <div className="flex flex-col ">
             {select === "home" ? (
-              <div className="relative flex flex-col min-h-screen">
-                <div className=" max-w-[100vw] sticky top-0 z-[1000]">
-                  <Header
-                    select={select}
-                    navChange1={navChange1}
-                    navChange2={navChange2}
-                    navChange3={navChange3}
-                    navChange4={navChange4}
-                    // navChange5={navChange5}
-                  />
+              <div className="relative overflow-hidden">
+                <div className="min-h-screen flex flex-col">
+                  <div className=" sticky top-0 z-[1000] ">
+                    <Header
+                      select={select}
+                      navChange1={navChange1}
+                      navChange2={navChange2}
+                      navChange3={navChange3}
+                      navChange4={navChange4}
+                      // navChange5={navChange5}
+                    />
+                  </div>
+                    <Hero />
                 </div>
-                <div className="overflow-auto overflow-x-hidden flex-1 max-w-[100vw]">
-                  <Hero />
+                <div className="overflow-auto overflow-x-hidden  max-w-[100vw]">
                   <Content />
                   <Footer />
                 </div>

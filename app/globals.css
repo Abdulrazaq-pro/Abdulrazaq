@@ -114,6 +114,9 @@ label {
 .logo {
   position: relative;
 }
+test {
+  color: #141414;
+}
 .logo::before {
   content: "";
   height: 3px;

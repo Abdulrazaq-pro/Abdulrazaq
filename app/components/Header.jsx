@@ -121,7 +121,7 @@ const Header = ({
         <div
           className={`fixed w-[90%] left-[50%] top-14   py-7 px-5 text-lg rounded-3xl z-[999] 
         ${nav ? "translate-x-[-50%] " : "translate-x-[80%]"} 
-        ease-in-out transition text-[#bbbbbb] bg-gradient-to-tr  from-[#424242] to-[#464646]`}
+        ease-in-out transition text-[#bbbbbb] bg-gradient-to-tr  from-[#2b2b2b] to-[#464646]`}
         >
           <ul className="m-auto space-y-3 navigation">
             <li

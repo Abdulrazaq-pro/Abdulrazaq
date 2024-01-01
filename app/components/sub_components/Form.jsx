@@ -107,7 +107,7 @@ const Form = () => {
             onClick={sendEmail}
             className="flex gap-1 justify-center items-center py-1 px-3 bg-gradient-to-tr from-secondary to-primary opacity-90 rounded-md text-white"
           >
-            <div>send</div>
+            <div>{send}</div>
             <div>
               <img
                 className="w-[16px]"
