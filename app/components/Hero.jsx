@@ -24,7 +24,7 @@ const Hero = () => {
         <p className="font-semibold text-neutral-700 dark:text-neutral-400">
           Front End developer
         </p>
-        <p className="max-md:text-sm text-neutral-600">
+        <p className="max-md:text-[16px] text-neutral-600">
           Front-End Maestro. Seamless user experience crafted with innovative
         e. <br />
           Welcome to the realm where innovation meets creativity! &#x1F680;
