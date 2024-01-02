@@ -9,7 +9,7 @@ const Jobs = () => {
     return (
       <div>
         <div
-          className={`  flex flex-col  rounded-lg  shadow-md  group overflow-hidden hover:opacity-80 relative shadow-lg`}
+          className={`  flex flex-col  rounded-lg  group overflow-hidden hover:opacity-80 relative shadow-lg`}
         >
           <div
             className={`font-semibold px-3 py-6 text-center  ${

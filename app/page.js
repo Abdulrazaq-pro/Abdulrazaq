@@ -74,7 +74,7 @@ export default function Home() {
                     // navChange5={navChange5}
                   />
                 <div className="overflow-y-auto ">
-                  <div className="min-h-screen items-center flex">
+                  <div className=" min-h-[calc(100vh-20px)] max-md:justify-center flex">
                     <Hero top={top} setTop={setTop} />
                   </div>
                   <Content />
