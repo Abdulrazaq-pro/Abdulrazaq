@@ -62,19 +62,21 @@ export default function Home() {
         {isLoading ? (
           <Loader />
         ) : (
-          <>
+          <div className="">
             {select === "home" ? (
               <div className="h-screen flex flex-col">
-                <Header
-                  select={select}
-                  navChange1={navChange1}
-                  navChange2={navChange2}
-                  navChange3={navChange3}
-                  navChange4={navChange4}
-                  // navChange5={navChange5}
-                />
-                <div className="overflow-y-auto">
-                  <Hero top={top} setTop={setTop} />
+                  <Header
+                    select={select}
+                    navChange1={navChange1}
+                    navChange2={navChange2}
+                    navChange3={navChange3}
+                    navChange4={navChange4}
+                    // navChange5={navChange5}
+                  />
+                <div className="overflow-y-auto ">
+                  <div className="min-h-screen items-center flex">
+                    <Hero top={top} setTop={setTop} />
+                  </div>
                   <Content />
                   <Footer />
                 </div>
@@ -132,7 +134,7 @@ export default function Home() {
                 </div>
               </div>
             )}
-          </>
+          </div>
         )}
         {/* <Header/> */}
       </DarkModeProvider>
