@@ -62,29 +62,22 @@ export default function Home() {
         {isLoading ? (
           <Loader />
         ) : (
-          <div className="flex flex-col ">
+          <>
             {select === "home" ? (
-              <div className="relative overflow-hidden">
-                <div className="min-h-screen flex flex-col">
-                  <div className=" sticky top-0 z-[1000] ">
-                    <Header
-                      select={select}
-                      navChange1={navChange1}
-                      navChange2={navChange2}
-                      navChange3={navChange3}
-                      navChange4={navChange4}
-                      // navChange5={navChange5}
-                    />
-                    
-                  </div>
-                    
-                    <Hero top={top} setTop={setTop}/>
-                </div>
-                <div className="overflow-auto overflow-x-hidden  max-w-[100vw]">
+              <div className="h-screen flex flex-col">
+                <Header
+                  select={select}
+                  navChange1={navChange1}
+                  navChange2={navChange2}
+                  navChange3={navChange3}
+                  navChange4={navChange4}
+                  // navChange5={navChange5}
+                />
+                <div className="overflow-y-auto">
+                  <Hero top={top} setTop={setTop} />
                   <Content />
                   <Footer />
                 </div>
-                <div className="justify-end sticky bottom-0 max-w-[100vw] "></div>
 
                 {/* <p>text</p> */}
               </div>
@@ -139,7 +132,7 @@ export default function Home() {
                 </div>
               </div>
             )}
-          </div>
+          </>
         )}
         {/* <Header/> */}
       </DarkModeProvider>
